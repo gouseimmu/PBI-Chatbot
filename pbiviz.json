@@ -1,0 +1,24 @@
+{
+  "visual": {
+    "name": "aiDataCopilot",
+    "displayName": "AI Data Copilot",
+    "guid": "AIDataCopilotB3A3A6B3D6",
+    "visualClassName": "Visual",
+    "version": "1.0.1.0",
+    "description": "AI-powered data copilot foundation for Power BI.",
+    "supportUrl": "https://example.com/support",
+    "gitHubUrl": ""
+  },
+  "apiVersion": "5.10.0",
+  "author": {
+    "name": "Gouse",
+    "email": "gouseimmugh@gmail.com"
+  },
+  "assets": {
+    "icon": "assets/icon.png"
+  },
+  "externalJS": [],
+  "style": "style/visual.less",
+  "capabilities": "capabilities.json",
+  "stringResources": []
+}

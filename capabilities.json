@@ -1,0 +1,302 @@
+{
+  "dataRoles": [
+    {
+      "displayName": "Categories",
+      "name": "categories",
+      "kind": "Grouping"
+    },
+    {
+      "displayName": "Measures",
+      "name": "measures",
+      "kind": "Measure"
+    }
+  ],
+  "dataViewMappings": [
+    {
+      "categorical": {
+        "categories": {
+          "for": {
+            "in": "categories"
+          }
+        },
+        "values": {
+          "select": [
+            {
+              "bind": {
+                "to": "measures"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "objects": {
+    "appearance": {
+      "displayName": "Appearance",
+      "properties": {
+        "chatBackgroundColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "userMessageBackgroundColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "assistantMessageBackgroundColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "userTextColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "primaryTextColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "secondaryTextColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "borderColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "accentColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "header": {
+      "displayName": "Header",
+      "properties": {
+        "showHeader": {
+          "type": {
+            "bool": true
+          }
+        },
+        "headerBackgroundColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "headerTextColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "headerHeight": {
+          "type": {
+            "numeric": true
+          }
+        },
+        "showSubtitle": {
+          "type": {
+            "bool": true
+          }
+        }
+      }
+    },
+    "typography": {
+      "displayName": "Typography",
+      "properties": {
+        "bodyFontSize": {
+          "type": {
+            "numeric": true
+          }
+        },
+        "messageFontSize": {
+          "type": {
+            "numeric": true
+          }
+        },
+        "headerFontSize": {
+          "type": {
+            "numeric": true
+          }
+        }
+      }
+    },
+    "layout": {
+      "displayName": "Layout",
+      "properties": {
+        "messageSpacing": {
+          "type": {
+            "numeric": true
+          }
+        },
+        "messageCornerRadius": {
+          "type": {
+            "numeric": true
+          }
+        },
+        "compactMode": {
+          "type": {
+            "bool": true
+          }
+        }
+      }
+    },
+    "behavior": {
+      "displayName": "Behavior",
+      "properties": {
+        "autoScroll": {
+          "type": {
+            "bool": true
+          }
+        },
+        "showTimestamps": {
+          "type": {
+            "bool": true
+          }
+        },
+        "showSuggestedQuestions": {
+          "type": {
+            "bool": true
+          }
+        },
+        "showAvatar": {
+          "type": {
+            "bool": true
+          }
+        }
+      }
+    },
+    "input": {
+      "displayName": "Input",
+      "properties": {
+        "inputHeight": {
+          "type": {
+            "numeric": true
+          }
+        },
+        "sendButtonSize": {
+          "type": {
+            "numeric": true
+          }
+        },
+        "inputCornerRadius": {
+          "type": {
+            "numeric": true
+          }
+        },
+        "inputBackgroundColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "inputTextColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "inputBorderColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "placeholderColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "sendButtonColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "sendButtonTextColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "supportsHighlight": true,
+  "supportsLandingPage": false,
+  "supportsEmptyDataView": true,
+  "privileges": [
+  {
+    "name": "WebAccess",
+    "essential": true,
+    "parameters": [
+      "https://ai-data-copilot-api-gdc6c9b5bffncfee.uaenorth-01.azurewebsites.net"
+    ]
+  }
+]
+}
